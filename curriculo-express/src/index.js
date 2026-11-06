@@ -27,7 +27,7 @@ app.use(contextMiddleware);
 
 // rotas
 app.get("/", (req, res) => {
-  return res.send("Servidor express executando...");
+  return res.redirect("/pessoas");
 });
 app.use("/session", routes.session);
 app.use("/users", routes.user);
